@@ -1,0 +1,216 @@
+.admin-dashboard-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f6f8fa;
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  padding: 0;
+}
+
+.admin-dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #23272f;
+  letter-spacing: -0.5px;
+  margin: 0 0 2rem 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.admin-logout-btn {
+  background: none;
+  color: #1976d2;
+  border: 1px solid #e0e7ef;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  float: right;
+  margin: 2.5rem 2.5rem 0 0;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+
+.admin-logout-btn:hover {
+  background: #1976d2;
+  color: #fff;
+  border: 1px solid #1976d2;
+}
+
+.admin-tabs-nav {
+  display: flex;
+  gap: 0;
+  margin: 0 0 0 2.5rem;
+  border-bottom: 1.5px solid #e0e7ef;
+  background: transparent;
+  padding-bottom: 0.5rem;
+}
+
+.admin-tab-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280;
+  padding: 1rem 2rem 0.7rem 2rem;
+  border-bottom: 2.5px solid transparent;
+  cursor: pointer;
+  transition: color 0.18s, border 0.18s;
+  border-radius: 0;
+  margin-right: 0.5rem;
+}
+
+.admin-tab-btn.active,
+.admin-tab-btn:hover {
+  color: #1976d2;
+  border-bottom: 2.5px solid #1976d2;
+  background: none;
+  font-weight: 700;
+}
+
+.admin-users-section,
+.admin-reservations-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  margin: 2rem 2.5rem 0 2.5rem;
+}
+
+.admin-users-title,
+.admin-reservations-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+.admin-users-table,
+.admin-reservations-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.admin-users-th,
+.admin-reservations-th {
+  background: #f3f6fa;
+  color: #1976d2;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: 1.5px solid #e0e7ef;
+  padding: 0.9rem 0.7rem;
+  text-align: left;
+}
+
+.admin-users-td,
+.admin-reservations-td {
+  color: #23272f;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e7ef;
+  padding: 0.9rem 0.7rem;
+}
+
+.admin-users-tr,
+.admin-reservations-tr {
+  transition: background 0.15s;
+}
+
+.admin-users-tr:hover,
+.admin-reservations-tr:hover {
+  background: #f6faff;
+}
+
+.admin-users-table th,
+.admin-users-table td,
+.admin-reservations-table th,
+.admin-reservations-table td {
+  padding: 0.9rem 0.7rem;
+}
+
+.admin-users-table tr,
+.admin-reservations-table tr {
+  border-bottom: 1px solid #e0e7ef;
+}
+
+.admin-users-table tr:last-child td,
+.admin-reservations-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-users-table button,
+.admin-reservations-table button {
+  background: #f3f6fa;
+  color: #1976d2;
+  border: 1px solid #e0e7ef;
+  border-radius: 5px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.97rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+
+.admin-users-table button:hover,
+.admin-reservations-table button:hover {
+  background: #1976d2;
+  color: #fff;
+  border: 1px solid #1976d2;
+}
+
+@media (max-width: 900px) {
+  .admin-dashboard-title,
+  .admin-tabs-nav,
+  .admin-users-section,
+  .admin-reservations-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-dashboard-title,
+  .admin-tabs-nav,
+  .admin-users-section,
+  .admin-reservations-section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .admin-users-section,
+  .admin-reservations-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .admin-dashboard-title {
+    font-size: 1.2rem;
+  }
+}
+.status-badge {
+  display: inline-block;
+  padding: 0.32em 0.9em;
+  border-radius: 1em;
+  font-size: 0.97em;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
+  color: #23272f;
+  border: 1px solid transparent;
+}
+
+.status-confirmed {
+  color: green;
+}
+
+.status-pending {
+  color: rgb(201, 201, 4);
+}
+
+.status-cancelled {
+  color: red;
+}
+.status-completed {
+  color: #1976d2;
+}
