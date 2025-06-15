@@ -6,7 +6,7 @@
 .auth-root {
   min-height: 100vh;
   width: 100vw;
-  background: url('../assets/pexels-photo-6758531.jpeg') center center/cover no-repeat;
+  background: url('../assets/auth-background.jpg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +17,25 @@
   inset: 0;
   background: rgba(30, 41, 59, 0.38);
   z-index: 1;
+}
+.back-arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: #1976d2;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.18s;
+}
+.back-arrow-link:hover {
+  color: #125ea7;
+  text-decoration: underline;
+}
+.arrow {
+  font-size: 1.2em;
+  vertical-align: middle;
 }
 .auth-card {
   position: relative;

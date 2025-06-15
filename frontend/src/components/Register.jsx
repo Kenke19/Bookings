@@ -42,7 +42,11 @@ export default function Register() {
   return (
     <div className="auth-root">
       <div className="auth-overlay"></div>
+
       <div className="auth-card">
+        <Link to="/" className="back-arrow-link">
+        <span className="arrow">&#8592;</span> Back to Home
+      </Link>
         <h2>Register</h2>
         <form onSubmit={handleSubmit}>
           <input
